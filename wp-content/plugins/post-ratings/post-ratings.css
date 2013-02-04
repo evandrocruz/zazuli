@@ -1,0 +1,110 @@
+
+.ratings{
+  margin: 5px 0;
+}
+
+.ratings:after{
+  content:'.';
+  display:block;
+  clear:both;
+  visibility:hidden;
+  line-height:0;
+  height:0;
+}
+
+.ratings .item{
+  display: none;
+}
+
+.ratings ul, .ratings a:hover, .ratings .rating{
+  background: transparent url(star.png) repeat-x;
+}
+
+/* !important because some bad themes override our rules :( */
+.ratings ul, .ratings li{
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ratings ul{
+  height: 16px;
+  float: left;
+}
+
+.ratings li{
+  position: relative;
+  display: block;
+}
+
+.ratings a{
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  display:block;
+  width:16px;
+  height: 16px;
+  text-decoration: none;
+  text-indent: -500px;
+  z-index: 10;
+}
+
+.ratings ul li a:hover{
+  background-position: left bottom;
+  z-index: 5;
+  left: 0 !important;
+}
+
+.ratings .s2 a{left:16px;}
+.ratings .s2 a:hover{width: 32px;}
+
+.ratings .s3 a{left: 32px;}
+.ratings .s3 a:hover{width: 48px;}
+
+.ratings .s4 a{left: 48px;}
+.ratings .s4 a:hover{width: 64px;}
+
+.ratings .s5 a{left: 64px;}
+.ratings .s5 a:hover{width: 80px;}
+
+.ratings .s6 a{left: 80px;}
+.ratings .s6 a:hover{width: 96px;}
+
+.ratings .s7 a{left: 96px;}
+.ratings .s7 a:hover{width: 112px;}
+
+.ratings .s8 a{left: 112px;}
+.ratings .s8 a:hover{width: 128px;}
+
+.ratings .s9 a{left: 128px;}
+.ratings .s9 a:hover{width: 144px;}
+
+.ratings .s10 a{left: 144px;}
+.ratings .s10 a:hover{width: 160px;}
+
+.ratings .rating{
+  background-position: left center;
+  position: absolute;
+  height: 16px;
+  display: block;
+  text-indent: -9999px;
+  z-index: 1;
+}
+
+.ratings .meta{
+  font-size: 11px;
+  color: #999;
+  float: left;
+  margin-left: 5px;
+  line-height: 18px;
+}
+
+.ratings .meta strong{
+  color: #666;
+}
+
+.ratings.error .meta{
+  color: #ff0000;
+  font-weight: bold;
+}
