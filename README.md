@@ -4,7 +4,7 @@ To have a zazu.li instance you have to:
 2. Install this plugin
 3. Install zazuli-theme (https://github.com/virgilio/zazuli-theme)
 4. Install the following plugins:
-* addthis
+** addthis
 * cartpauj-register-captcha
 * lightbox-plus
 * post-ratings
